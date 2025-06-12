@@ -431,6 +431,51 @@ footer {
     font-style: italic;
 }
 
+/* Expandable Testimonial Styles */
+.testimonial-expandable {
+    position: relative;
+}
+
+.testimonial-text {
+    margin-bottom: 15px;
+}
+
+.testimonial-preview {
+    margin-bottom: 0;
+}
+
+.testimonial-full {
+    margin-bottom: 0;
+}
+
+.testimonial-full p {
+    margin-bottom: 15px;
+}
+
+.testimonial-full p:last-child {
+    margin-bottom: 0;
+}
+
+.read-more-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.read-more-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
 /* Responsive Styles */
 @media (max-width: 1024px) {
     .hero-section .container {

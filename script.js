@@ -49,3 +49,20 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// Toggle testimonial expand/collapse (global function)
+function toggleTestimonial(button) {
+    const testimonialCard = button.closest('.testimonial-expandable');
+    const preview = testimonialCard.querySelector('.testimonial-preview');
+    const full = testimonialCard.querySelector('.testimonial-full');
+    
+    if (full.style.display === 'none') {
+        preview.style.display = 'none';
+        full.style.display = 'block';
+        button.textContent = 'Read Less';
+    } else {
+        preview.style.display = 'block';
+        full.style.display = 'none';
+        button.textContent = 'Read More';
+    }
+}
